@@ -118,5 +118,4 @@ setup(
     install_requires=['numpy'],
     cmdclass={'build_ext': BuildExt},
     zip_safe=False,
-    packages=find_packages()
 )
