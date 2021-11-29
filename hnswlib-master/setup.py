@@ -4,7 +4,8 @@ import sys
 import numpy as np
 import pybind11
 import setuptools
-from setuptools import Extension, setup
+from setuptools import Extension, setup, find_packages
+
 from setuptools.command.build_ext import build_ext
 
 __version__ = '0.5.2'
@@ -117,4 +118,5 @@ setup(
     install_requires=['numpy'],
     cmdclass={'build_ext': BuildExt},
     zip_safe=False,
+    packages=find_packages()
 )
